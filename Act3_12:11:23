@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+     Scanner in = new Scanner(System.in);
+     String name;
+     String ysec;
+     int yr;
+     int math;
+     int eng;
+     int sci;
+     int css;
+     
+      System.out.print("WHat is your name: ");
+      name = in.next();
+      
+      System.out.print("What is your year and section: ");
+      ysec = in.next();
+      
+      System.out.print("Enter your math grade: ");
+      math = in.nextInt();
+      
+       System.out.print("Enter your english grade: ");
+      eng = in.nextInt();
+      
+       System.out.print("Enter your science grade: ");
+      sci = in.nextInt();
+      
+       System.out.print("Enter your ICT grade: ");
+      css = in.nextInt();
+      
+     System.out.println("Hi " + name + " of " + ysec + " your average is " + ((math + sci + eng + css) / 4));
+    }
+}
