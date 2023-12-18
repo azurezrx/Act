@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Helloworld {
+    public static void main(String[] args) {
+     Scanner in = new Scanner(System.in);
+     
+    String fname;
+    String mname;
+    String lname;
+    
+System.out.print("Enter a your first name:");
+fname = in.next();
+
+System.out.print("Enter a your second name:"); 
+mname = in.next();
+
+System.out.print("Enter a your surname name:"); 
+lname = in.next();
+
+System.out.print("Your name is " + fname + " " + mname + " " + lname);
+
+ }
+}
