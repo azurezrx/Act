@@ -20,7 +20,7 @@ class operational {
         
         System.out.print("Hello " + name + " Your grade is invalid ");
         
-        scanner.close();
+        in.close();
       
         
     }
