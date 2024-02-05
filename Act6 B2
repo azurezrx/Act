@@ -20,6 +20,6 @@ public class ValueChecker {
                 System.out.println("Invalid number!");
             }
 
-        } while ((num < 60) || (num > 100));
+        } while ((num < 1) || (num > 100));
     }
 }
