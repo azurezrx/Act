@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class act7 {
+
+    public static void main(String[] args) {
+        
+        Scanner in = new Scanner(System.in);
+        
+        String user;
+        String pass;
+        String pass2;
+        
+        do {
+            System.out.print("Enter username: ");
+            user = in.next();
+            
+            System.out.print("Enter password: ");
+            pass = in.next();
+            
+            System.out.print("Re-Enter password: ");
+            pass2 = in.next();
+            
+            if (!pass.equals(pass2)) {
+                System.out.println("Passwords do not match. Please try again.");
+            }
+            
+        } while (user.isEmpty() || pass.isEmpty() || !pass.equals(pass2));
+        
+        
+   
+        String user2;
+        String pass3;
+          
+        do {
+      
+       System.out.print("Enter username: ");
+       user2 = in.next();
+       
+       System.out.print("Enter password: ");
+       pass3 = in.next();
+       
+       if (user2.equals(user)) {
+    	   System.out.print("Login Success!");
+       }
+       if (!pass3.equals(pass2)) {
+    	   System.out.print("Login Failed!");
+       }
+    	   
+       } while (!pass3.equals(pass2));
+    	   
+    }
+}       
