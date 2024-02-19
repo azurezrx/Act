@@ -1,0 +1,88 @@
+import java.util.Scanner;
+
+public class act7 {
+
+    public static void main(String[] args) {
+        
+        Scanner in = new Scanner(System.in);
+        
+        int num1;
+        int num2;
+        char A;
+
+     do {   
+        System.out.print("Enter 1st number: ");
+        num1 = in.nextInt();
+        
+        System.out.print("Enter 2nd number: ");
+        num2 = in.nextInt();
+        
+        do {
+        System.out.print("Enter operation: (+,-,*,/,%) ");
+        A = in.next().charAt(0);
+        
+        }while ((A != '+') && (A != '-') && (A != '*') && (A != '/') && (A != '%'));
+        
+        if (A == '+')
+        System.out.println("The sum is " + (num1 + num2));
+        
+        if (A == '-')
+        System.out.println("The difference is " + (num1 - num2));
+        
+        if (A == '*')
+        System.out.println("The product is " + (num1 * num2));
+        
+        if (A == '/')
+        System.out.println("The quotient is " + (num1 / num2));
+        
+        if (A == '%')
+        System.out.println("The remainder is " + (num1 % num2));
+        
+     }while ((A != '+') && (A != '-') && (A != '*') && (A != '/') && (A != '%'));
+     
+        char B;
+        
+        do {
+        System.out.print("Do you want to enter another number? (y/n): ");
+        B = in.next().charAt(0);
+        
+        if (B == 'y')
+        
+               
+     do {   
+        System.out.print("Enter 1st number: ");
+        num1 = in.nextInt();
+        
+        System.out.print("Enter 2nd number: ");
+        num2 = in.nextInt();
+        
+        do{
+        System.out.print("Enter operation: (+,-,*,/,%) ");
+        A = in.next().charAt(0);
+        
+        }while ((A != '+') && (A != '-') && (A != '*') && (A != '/') && (A != '%'));
+        
+        if (A == '+')
+        System.out.println("The sum is " + (num1 + num2));
+        
+        if (A == '-')
+        System.out.println("The difference is " + (num1 - num2));
+        
+        if (A == '*')
+        System.out.println("The product is " + (num1 * num2));
+        
+        if (A == '/')
+        System.out.println("The quotient is " + (num1 / num2));
+        
+        if (A == '%')
+        System.out.println("The remainder is " + (num1 % num2));
+        
+     }while ((A != '+') && (A != '-') && (A != '*') && (A != '/') && (A != '%'));
+     
+     if (B == 'n')
+     System.out.print("End the program.");
+     
+     }while (B != 'n');
+        
+    }
+}
