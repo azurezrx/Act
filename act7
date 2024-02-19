@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+public class act7 {
+
+    public static void main(String[] args) {
+        
+        Scanner in = new Scanner(System.in);
+        
+        int num1;
+        int num2;
+        char ope;
+
+        
+        System.out.print("Enter 1st number: ");
+        num1 = in.nextInt();
+        
+        System.out.print("Enter 2nd number: ");
+        num2 = in.nextInt();
+        
+        
+        do {
+        System.out.print("Enter operation: ");
+        ope = in.next().charAt(0);
+        
+        if (ope == '+')
+            System.out.print("The sum is " + (num1 + num2));
+        
+        if (ope == '-')
+            System.out.print("The difference is " + (num1 - num2));
+        
+        if (ope == 'x')
+            System.out.print("The product is " + (num1 * num2));
+           
+        if (ope == '/')
+            System.out.print("The quotient is " + (num1 / num2));
+           
+        if (ope == '%')
+            System.out.print("The remainder is " + (num1 % num2));
+        }while ((ope != '+') && (ope != '-') && (ope != 'x') && (ope != '/') && (ope != '%'));
+        
+            char yn;
+            do { System.out.println("Do you want to enter another number? (y/n): ");
+            yn = in.next().charAt(0);
+            
+            if (yn == 'y')
+            
+        do { System.out.print("Enter operation: ");
+        ope = in.next().charAt(0);
+        
+        if (ope == '+')
+            System.out.println("The sum is " + (num1 + num2));
+        
+        if (ope == '-')
+            System.out.println("The difference is " + (num1 - num2));
+        
+        if (ope == 'x')
+            System.out.println("The product is " + (num1 * num2));
+           
+        if (ope == '/')
+            System.out.println("The quotient is " + (num1 / num2));
+           
+        if (ope == '%')
+            System.out.print("The remainder is " + (num1 % num2));
+        }while ((ope != '+') && (ope != '-') && (ope != 'x') && (ope != '/') && (ope != '%'));
+        
+        if (yn == 'n')
+        System.out.print("END");
+        
+            }while (yn != 'n');
+            
+            
+    }
+}
