@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        double num1;
+        double num2;
+        int o;
+        double r;
+        char yn;
+
+        do {
+            System.out.println("Simple Calculator");
+            System.out.println("Enter two numbers:");
+            num1 = in.nextDouble();
+            num2 = in.nextDouble();
+
+            do {
+                System.out.println("Choose an operation:");
+                System.out.println("1. Addition");
+                System.out.println("2. Subtraction");
+                System.out.println("3. Multiplication");
+                System.out.println("4. Division");
+                o = in.nextInt();
+
+                switch (o) {
+           case 1:
+            r = num1 + num2;
+            System.out.println("Result: " + r);
+            break;
+           case 2:
+            r = num1 - num2;
+            System.out.println("Result: " + r);
+            break;
+           case 3:
+            r = num1 * num2;
+            System.out.println("Result: " + r);
+            break;
+           case 4:
+            if (num2 != 0) {
+            r = num1 / num2;
+            System.out.println("Result: " + r);
+            } else {
+            System.out.println("Error: Division by zero");
+            }
+            break;
+            default:
+            System.out.println("Error: Invalid operation");
+                }
+            } while (o < 1 || o > 4);
+
+            System.out.println("Do you want to use the calculator again? (yes/no)");
+            yn = in.next().charAt(0);
+        } while (yn == 'y' || yn == 'Y');
+
+        in.close();
+    }
+}
