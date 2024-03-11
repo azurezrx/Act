@@ -1,0 +1,179 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+       
+       
+       
+      String n;
+      String s;
+      String a;
+      int z;
+      int y;
+      int x;
+      
+      
+      do {
+      System.out.println("Choices");
+      System.out.println("1. Enter your name:");
+      System.out.println("2. Enter your section:");
+      System.out.println("3. Enter your address:");
+      z = in.nextInt();
+      
+      
+     
+      switch (z) {
+          
+          case 1:
+              System.out.print("1. Enter your name: ");
+              n = in.next();
+              break;
+              
+          case 2:
+              System.out.print("2. Enter your section: ");
+              s = in.next();
+              break;
+              
+          case 3:
+              System.out.print("3. Enter your address: ");
+              a = in.next();
+              break;
+            
+            
+            default:
+            System.out.println("Error");
+      } 
+  }while (z < 1 || z > 3);
+  
+  
+  
+  if (z==1) { 
+      do {
+      System.out.println("Choices");
+      System.out.println("2. Enter your section:");
+      System.out.println("3. Enter your address:");
+      y = in.nextInt();
+      
+      
+     
+      switch (y) {
+          
+          case 2:
+              System.out.print("2. Enter your section: ");
+              s = in.next();
+              break;
+              
+          case 3:
+              System.out.print("3. Enter your address: ");
+              a = in.next();
+              break;
+            
+            
+            default:
+            System.out.println("Error");
+      } 
+  }while (y < 2 || z > 3);
+  
+  
+  if(y==1 || y==2) {
+        do {  
+       System.out.println("Choice:");
+       System.out.println("3. Enter your address: ");
+       x = in.nextInt();
+       
+      if (x==3) 
+       System.out.print("Enter your address: ");
+     
+        } while (x != 3);
+    }
+          }
+          
+          
+          
+              else if (z==2) { 
+      do {
+      System.out.println("Choices");
+      System.out.println("1. Enter your name:");
+      System.out.println("3. Enter your address:");
+      y = in.nextInt();
+      
+      
+     
+      switch (y) {
+          
+          case 1:
+              System.out.print("1. Enter your name: ");
+              s = in.next();
+              break;
+              
+          case 3:
+              System.out.print("3. Enter your address: ");
+              a = in.next();
+              break;
+            
+            
+            default:
+            System.out.println("Error");
+      } 
+  }while (y < 1 || z > 3);
+  
+   if(y==1 || y==3) {
+        do {  
+       System.out.println("Choice:");
+       System.out.println("2. Enter your section: ");
+       x = in.nextInt();
+       
+      if (x==2) 
+       System.out.print("Enter your section: ");
+     
+        } while (x != 2 );
+    }
+          }
+              
+              
+              
+              else if (z==3) { 
+      do {
+      System.out.println("Choices");
+      System.out.println("1. Enter your name:");
+      System.out.println("2. Enter your section:");
+      y = in.nextInt();
+      
+      
+     
+      switch (y) {
+          
+          case 1:
+              System.out.print("1. Enter your name: ");
+              s = in.next();
+              break;
+              
+          case 2:
+              System.out.print("2. Enter your section: ");
+              a = in.next();
+              break;
+            
+            
+            default:
+            System.out.println("Error");
+      } 
+  }while (y < 1 || z > 2);
+  
+   if(y==2 || y==3) {
+        do {  
+       System.out.println("Choice:");
+       System.out.println("1. Enter your name: ");
+       x = in.nextInt();
+       
+      if (x==1) 
+       System.out.print("Enter your name: ");
+     
+        } while (x != 1);
+          }
+              }
+              
+         
+          
+          
+    }
+}
